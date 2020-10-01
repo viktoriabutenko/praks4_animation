@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+/*** ---- HEADER ---- ***/
+
+header {
+  background-image: url(header-background-img.png);
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      112.69deg,
+      #000000 7%,
+      rgba(100, 100, 100, 0.6) 55%,
+      #000000 98%
+    ),
+    url(header-background-img.png);
+  color: white;
+}
+
+#logo {
+  margin: 0;
+  font-size: 36px;
+  padding-top: 2%;
+  padding-left: 8px;
+}
+
+nav {
+  margin: 0;
+  padding-left: 62%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+
+.header-container h1 {
+  font-size: 105px;
+  margin: 0;
+  width: 650px;
+  font-weight: normal;
+  padding-top: 12%;
+  text-align: left;
+}
+
+body {
+  font-family: Roboto, serif;
+  margin: 0;
+}
+
+/*** ---- WELCOME ---- ***/
+
+.main-content {
+  text-align: center;
+}
+
+.welcome-content {
+  display: flex;
+}
+
+.welcome-content img {
+  border-radius: 2px;
+}
+
+.welcome-content p {
+  text-align: left;
+  margin-left: 80px;
+  width: 490px;
+}
+
+.welcome-content p::first-letter {
+  font-size: 40px;
+  color: #5b1474;
+}
+
+.welcome h2 {
+  margin-top: 18%;
+  margin-bottom: 8%;
+}
+
+section h2 {
+  color: #5b1474;
+  font-size: 42px;
+}
+
+section p {
+  font-size: 20px;
+}
+
+/*** ---- PRICING ---- ***/
+
+.pricing h2 {
+  margin-top: 18%;
+  margin-bottom: 8%;
+}
+
+.pricing-content {
+  display: flex;
+  width: 1360px;
+}
+
+.pricing-content img {
+  width: 300px;
+  margin-right: 80px;
+  border-radius: 2px;
+}
+
+.pricing-content p:nth-child(2n) {
+  width: 300px;
+  margin-right: 80px;
+  color: #303030;
+}
+
+.pricing-content p:nth-child(2n + 1) {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  border: 1px solid #5b1474;
+  box-shadow: 0px 1px 4px #5b1474;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+}
+
+.text1 {
+  margin-bottom: 45px;
+}
+
+.summa {
+  color: #5b1474;
+}
+
+.summa2 {
+  background-color: rgba(91, 20, 116, 1);
+  color: white;
+}
+
+/*** ---- Testimonials ---- ***/
+
+.testimonials h2 {
+  margin-top: 18%;
+  margin-bottom: 8%;
+}
+
+.testimonials-content {
+  text-align: left;
+}
+
+.testimonials-content p:nth-child(2n) {
+  color: black;
+  font-style: italic;
+  text-align: right;
+}
+
+.tsitaat1 {
+  box-shadow: 0px 0px 2px #303030;
+  border-radius: 4px;
+  margin-bottom: 80px;
+}
+
+.tsitaat2 {
+  margin-bottom: 30%;
+  box-shadow: 0px 0px 2px #303030;
+  border-radius: 4px;
+}
+
+/*** ---- FOOTER---- ***/
+
+footer {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+/*** ---- FEYFRAMES ---- ***/
+
+.summa {
+  width: 100px;
+  height: 50px;
+  transition: width 2s, height 1s;
+}
+
+.summa:hover {
+  width: 200px;
+  height: 35px;
+}
+
+.summa2 {
+  width: 100px;
+  height: 50px;
+  transition: width 2s, height 1s;
+}
+
+.summa2:hover {
+  width: 200px;
+  height: 35px;
+}
+
+.pricing-card img {
+  width: 300px;
+  height: 300px;
+  transition: width 2s, height 1s;
+}
+
+.pricing-card img:hover {
+  width: 300px;
+  height: 350px;
+}
+
+body h2 {
+  animation-name: h2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h2 {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  30% {
+    background-color: yellow;
+  }
+  45% {
+    background-color: green;
+  }
+  60% {
+    background-color: lightskyblue;
+  }
+  75% {
+    background-color: blue;
+  }
+  90% {
+    background-color: violet;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+#logo {
+  width: 145px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: logo;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.pricing-card {
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1),
+    0 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1),
+    0 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card:hover {
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5),
+    0 1px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5),
+    0 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
